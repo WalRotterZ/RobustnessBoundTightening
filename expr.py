@@ -64,10 +64,10 @@ onnx_vnnlib_pairs = process_mnist_config(config_onnx_path)
 nnet_vnnlib_pairs = process_acasxu_config(config_nnet_path)
 m_mnist = read_x_from_file(x_onnx_path)
 m_acasxu = read_x_from_file(x_nnet_path)
-'''
+
 if len(onnx_vnnlib_pairs) != 0:
     process_mnist_onnx_vnnlib(onnx_folder, vnnlib_folder, onnx_vnnlib_pairs, m_mnist)
-'''
+
 if len(nnet_vnnlib_pairs) != 0:
     process_acasxu_nnet_vnnlib(nnet_folder, vnnlib_folder, nnet_vnnlib_pairs, m_acasxu)
 
